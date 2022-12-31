@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+   *{
+    box-sizing: border-box;
+    }
+    .container1, .container3
+    {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+       height: 700px;
+       width:500px;
+      display: flex;
+     align-items: center;
+    }
+    .container3{
+      width:75%;
+     
+    }
+     .about{
+       padding:15px;
+       font-size:25px;
+       background-color:rgba(225, 226, 233, 0.934);
+     }
+     .bg{
+      background-image: url("/src/images/bg-4.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+     
+     }
+     .bgWhole{
+      background-image: url("/src/images/bg-6.jpg");
+      background-size:cover;
+      background-repeat: no-repeat;
+     
+     }
+    
+    .page, .page2 {
+      position:absolute;
+      height:550px;
+      width:100%;
+     border-radius: 20px;
+     border: 2px solid black;
+     background-image: url("/src/images/paper1.jpg");
+    
+    }
+    
+    
+    
+    
+    #p1 {
+      /*box-shadow: 5px 10px 8px #888888;*/
+      z-index: 5; 
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    }
+    #p2 {
+    z-index: 4;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+     }
+    
+    #p3 {
+      z-index: 3; 
+     
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+      }
+    #p4{
+    
+      z-index: 2;
+      
+      background-image: url("/src/images/back-cover.jpg");
+      
+      background-repeat: no-repeat;
+      background-size:cover; 
+      opacity: 0.8;
+    }
+    .flipped{
+      
+      transform:rotateX(20deg) rotateY(-180deg);
+       transition: transform 3s;
+        transform-origin:left;
+        z-index: 0;
+        backface-visibility: hidden;
+        perspective: 1500px;
+       box-shadow: 10px 0px 10px white;
+    }
+    
+    
+    .content {
+        font-size: 20px;
+        text-align: center;
+        color:black;
+        text-align: justify;
+       text-justify: inter-word;
+       padding:10px;
+       font-family: 'Sofia'
+    }
+    .headings
+    {   padding:5px;
+      text-align:center;
+      font-size: 40px;
+      font-family: 'Sofia'
+    }
+        @media screen  and (max-width :1000px){
+        .container1{
+          width:100%;
+          
+        } }
+        @media screen  and (max-width :1000px){
+          .container3{
+            width:100%;
+            
+          }
+    }

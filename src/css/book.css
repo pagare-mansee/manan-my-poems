@@ -1,0 +1,95 @@
+  *{
+  box-sizing: border-box;
+  font-family: 'Sofia'
+  }
+  
+  
+   .container2{
+    position:absolute;
+    height:500px;
+    border-radius: 10px;
+     width:300px;
+     margin: auto;
+     left:20%;
+     top:10%;
+   
+  }
+  
+  .header{
+   
+    background-image: url("/src/images/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+
+  }
+  .gray-box {
+    /*box-shadow: 5px 10px 8px #888888;*/
+     background-image: url("/src/images/book-cover.png");
+     background-size:cover;
+     background-repeat: no-repeat;
+     z-index: 5;  transform: skewY(20deg);
+  border-left:20px solid crimson;
+  height:520px;
+  width:260px;
+  box-shadow: 0px 30px 10px 15px rgba(128, 128, 128, 0);
+  
+  }
+  .blue-box {
+    box-shadow: 10px 10px 10px 15px rgba(128, 128, 128, 0.096);
+   z-index: 4;
+   background: white;
+   transform: skewY(15deg);
+   }
+  
+  .green-box {
+    transform: skewY(15deg);
+    z-index: 3; 
+    background: white;
+    
+     width:310px;
+   
+     box-shadow: 10px 10px 10px 15px rgba(128, 128, 128, 0.096)
+  
+  }
+  .box3{
+  transform: skewY(15deg);
+    z-index: 2; 
+    background: white;
+   
+     width:320px;
+     box-shadow: 10px 10px 10px 15px rgba(128, 128, 128, 0.096)
+    }
+  .box4{
+  transform: skewY(15deg);
+    z-index: 1; 
+    background:white;
+   
+     width:330px;
+   
+     box-shadow: 10px 10px 10px 15px rgba(128, 128, 128, 0.096)
+  }
+  .box5{
+  transform: skewY(15deg);
+    z-index: 0; 
+    background: white;
+    
+     width:340px;
+     box-shadow: 10px 10px 10px 15px rgba(128, 128, 128, 0.096);
+    }
+    .flipped{
+    
+    transform:rotateX(20deg) rotateY(-180deg);
+     transition: transform 1s;
+      transform-origin:left;
+      z-index: 0;
+      backface-visibility: hidden;
+      perspective: 1500px;
+     box-shadow: 10px 0px 10px white;
+  }
+@media screen  and (max-width :1000px){
+  .container2{
+    left:0%;
+    
+  }
+}
